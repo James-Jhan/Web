@@ -1,0 +1,201 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Image Audio video</title>
+        <link rel="short icon" href="../../images/HTML5.png">
+    </head>
+    <body>
+        <h1>Introducing how to load image, audio and video.</h1>
+        <h3>It's placed in the body tag</h3>
+        <ul style="list-style: disc">
+            <li><a href="#image"> Loading Image</a></li>
+            <li><a href="#audio">Loading Audio</a></li>
+            <li><a href="#video">Loading Video</a></li>
+        </ul>
+        <hr/>
+        <ul style="list-style: circle">
+            <h3 id="image"><li>Loading Image</li><br/></h3>
+            <h4>Example 1:</h4>
+            code:<br/>
+            &lt;img src=:"firefix.png" width="200" height="200" alt="ForeFox"&gt;<br/><br/>
+            result:<br/>
+            <img src="../../images/FireFox.png" width="200" height="200" alt="ForeFox"/>
+            <h4>Example 2:</h4>
+            code:<br/><br/>
+            &lt;figure&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;img src=:"firefix.png" width="200" height="200" alt="ForeFox"&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;ifigcaption&gt;Description of Iamge&lt;/figcaption&gt;<br/>
+            &lt;/figure&gt;<br/><br/>
+            result:<br/>
+            <figure>
+                <img src="../../images/FireFox.png" width="200" height="200"/>
+                <figcaption>Description of this Image</figcaption>
+            </figure><br/>
+            <h4>Introducing attribute about Loading Image.</h4>
+            <Table border="1">
+                <tr>
+                    <th>Key word</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>To define an image.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>To define the URL of the image.</td>
+                </tr>
+                <tr>
+                    <td>alt</td>
+                    <td>To define an alternate text for an image, if it cannot be displayed.</td>
+                </tr>
+                <tr>
+                    <td>width and height</td>
+                    <td>To define the size of the image.</td>
+                </tr>
+                <tr>
+                    <td>&lt;map&gt;</td>
+                    <td>To define an image-map.</td>
+                </tr>
+                <tr>
+                    <td>&lt;area&gt;</td>
+                    <td>To define clickable areas in the image-map.</td>
+                </tr>
+                <tr>
+                    <td>&lt;img&gt;'s element usemap</td>
+                    <td>To point to an image-map.</td>
+                </tr>
+                <tr>
+                    <td>&lt;picture&gt;</td>
+                    <td>To show different images for different devices.</td>
+                </tr>
+            </Table>
+        </ul>
+        <a href="#top">Go to top.</a>
+        <hr/>
+        <ul style="list-style: circle">
+            <h3 id="audio"><li>Loading Audio</li></h3>
+            code:<br/>
+            &lt;audio controls&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="mp3 source" type="audio/mpeg"/&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="ogg source" type="audio/ogg"/&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;Some Comment(It's will be showed when audio file is not exist.)&gt;<br/>
+            &lt;/audio&gt;<br/><br/>
+            result:<br/>
+            <audio controls>
+                <source src="http://www.sololearn.com/uploads/audio.mp3" type="audio/mpeg">
+                <source src="http://www.sololearn.com/uploads/audio.ogg" type="audio/ogg">
+                Audio element not supported by your browser.
+            </audio><br/>
+            <table border="1">
+                <tr>
+                    <th>Key word</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>Specifies that the audio will start playing as soon as it is ready.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>Specifies that audio controls should be displayed (such as a play/pause button etc).</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>Specifies that the audio will start over again, every time it is finished.</td>
+                </tr>
+                <tr>
+                    <td>muted</td>
+                    <td>Specifies that the audio output should be muted.</td>
+                </tr>
+                <tr>
+                    <td>preload</td>
+                    <td>Specifies if and how the author thinks the audio should be loaded when the page loads.</td>
+                </tr>
+                <tr>
+                    <td>src</td>
+                    <td>Specifies the URL of the audio file.</td>
+                </tr>
+            </table>
+            <a href="#top">Go to top.</a>
+        </ul>
+        <hr/>
+        <ul style="list-style: circle">
+            <h3 id="video"><li>Loading Video</li></h3>
+            <h4>Example 1:Loading video by files</h4>
+            code:<br/>
+            &lt;video width="450" height="300" controls&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="video_source.mp4" type="video/mp4"/&gt;<br/>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;source src="video_source.ogg" type="video/ogg"/&gt;<br/>
+            &lt;/video&gt;<br/><br/>
+            result:<br/>
+            <video width="450" height="300" controls>
+                <source src="http://www.sololearn.com/uploads/video.mp4" type="video/mp4"/>
+                <source src="http://www.sololearn.com/uploads/video.ogg" type="video/ogg"/>
+                Video is not supported by your browser.
+            </video>
+            <h4>video attribute list:</h4>
+            <table border="1">
+                <tr>
+                    <th>Key word</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td>width and height</td>
+                    <td>To define the size of the video.</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>Specifies that video controls should be displayed (such as a play/pause button etc).</td>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>Specifies that the video will start playing as soon as it is ready</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>Specifies that the video will start over again, every time it is finished</td>
+                </tr>
+            </table>
+            <h4>Example 2:Loading video by youtube</h4>
+            code:<br/>
+            &lt;iframe width="650" height="500" src="https://www.youtube.com/embed/youtube_ID?autoplay=1" frameborder="0"/&gt;<br/>
+            result:<br/>
+            <iframe width="650" height="500" src="https://www.youtube.com/embed/IHUKxHiRraw?autoplay=1"/>
+            </iframe>
+            <h4>youtube video attribute list:</h4>
+            <table border="1">
+                <tr>
+                    <th>Key word</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>width and height</td>
+                    <td>To define the size of the video.</td>
+                    <td>&lt;iframe width="width" height="height"&gt;</td>
+                </tr>
+                <tr>
+                    <td>controls</td>
+                    <td>Specifies that video controls should be displayed (such as a play/pause button etc).</td>
+                    <td>&lt;iframe src="https://www.youtube.com/embed/youtube_ID?controls=0"&gt;</td>
+                </tr>
+                <tr>
+                    <td>autoplay</td>
+                    <td>Specifies that the video will start playing as soon as it is ready</td>
+                    <td>&lt;iframe src="https://www.youtube.com/embed/youtube_ID?autoplay=1"&gt;</td>
+                </tr>
+                <tr>
+                    <td>loop</td>
+                    <td>Specifies that the video will start over again, every time it is finished</td>
+                    <td>&lt;iframe src="https://www.youtube.com/embed/youtube_ID?playlist=youtube_ID&amp;loop=number"&gt;</td>
+                </tr>
+            </table><br/>
+            <a href="#top">Go to top.</a>
+        </ul>
+        <hr/>
+        <br/>
+        <a href="../main.html">Go back.</a>
+    </body>
+</html>

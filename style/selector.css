@@ -27,7 +27,7 @@ td{
 }
 
 table{
-    width: 500px;
+    width: 750px;
 }
 
 #Unviseral-Example{
@@ -51,3 +51,35 @@ a:link{color: blue;}
 a:visited{color: black;}
 a:hover{color: red;background-color: #b6ff00;}
 a:active{color: green;}
+
+a[class = "Attribute"]{
+    color: yellow;
+    background-color: blue;
+}
+
+a[href = "https://www.google.com/"]{
+    font-size: 20px;
+    color: red;
+}
+
+a[href ~="https://www.google.com.tw/"]{
+    font-size: 10px;
+    color: orange;
+}
+
+img[alt |= "FireFox"]{
+    border: 2px solid blue;
+}
+
+img[alt ^= "Ame"]{
+    border: 2px solid green;
+}
+
+img[alt $= "land"]{
+    border: 2px solid red;
+}
+
+img[alt *= "ML"]{
+    color: white;
+    background-color: black;
+}

@@ -260,6 +260,93 @@
         </tr>
     </table>
     <hr />
+    <ul style="list-style: disc">
+        <li><h3>Attribute Selectors</h3></li>
+    </ul>
+    <p class="Description">Description:</p>
+    <p>It's usually designed to the hyperlink, we designate the styles of them by this selector.</p>
+    <table border="1" id="Attribute">
+        <tr>
+            <th>Form</th>
+            <th>Description</th>
+            <th>Code</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>Tag[Property]</td>
+            <td>The Property will be selected whcih the same tag.</td>
+            <td>
+                a[href]{<br />
+                    color: red;<br />
+                }
+            </td>
+            <td><a href="http://wwww.google.com" class="Attribute">Google website</td>
+        </tr>
+        <tr>
+            <td>Tag[Property = "Value"]</td>
+            <td>The property will be selected which tag and value are same.</td>
+            <td>
+                a[href = "https://www.google.com/"]{<br />
+                    font-size: 20px;<br />
+                    color: red;<br />
+                }
+            </td>
+            <td><a href="https://www.google.com/">Google website</a></td>
+        </tr>
+        <tr>
+            <td>Tag[Property ~= "Value"]</td>
+            <td>The property whcih content has assigned value will be selected.</td>
+            <td>
+                a[href ~= "https://www.google.com.tw/"]{<br />
+                    font-size: 10px;
+                    color: orange;
+                }
+            </td>
+            <td><a href="https://www.google.com.tw/">Taiwan Google website</a></td>
+        </tr>
+        <tr>
+            <td>Tag[Property |= "Value"]</td>
+            <td>The property whcih start value and "-" symbol is assigned value will be selected.</td>
+            <td>
+                img[alt |= FireFox]{<br />
+                    border:2px solid blue;<br />
+                }
+            </td>
+            <td><img src="../../images/FireFox1.png" alt="FireFox-1"></td>
+        </tr>
+        <tr>
+            <td>Tag[Property ^= "Value"]</td>
+            <td>The property which started words as same as assigned value.</td>
+            <td>
+                img[alt ^= "Ame"]{<br />
+                    boreder: 2px solid green;<br />
+                }
+            </td>
+            <td><img src="../../images/Americ" alt="America"></td>
+        </tr>
+        <tr>
+            <td>Tag[Property $= "Value"]</td>
+            <td>The property which ended words as same as assigned value will be selected.</td>
+            <td>
+                img[alt $= "land"]{<br />
+                    border: 2px solid red;
+                }
+            </td>
+            <td><img src="../../images/England" alt="England"></td>
+        </tr>
+        <tr>
+            <td>Tag[Property *= "Value"]</td>
+            <td>The property which has any one assigned words will be selected.</td>
+            <td>
+                img[alt *= "ML"]{<br />
+                    color: white;<br />
+                    background-color: black;<br />
+                }
+            </td>
+            <td><img src="../../images/HTML5" alt="HTML5"></td>
+        </tr>
+    </table>
+    <hr />
     <a href="../main.html">Go Back.</a>
 </body>
 </html>

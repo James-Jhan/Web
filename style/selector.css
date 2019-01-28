@@ -1,0 +1,53 @@
+.ClassSelector{
+    color: red;
+}
+
+#IDSelector{
+    color: green;
+}
+
+h4{
+    color: blue;
+}
+
+.Description{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+th{
+    background-color: green;
+    color: white;
+    width: auto;
+}
+
+td{
+    height: 50px;
+    width: auto;
+}
+
+table{
+    width: 500px;
+}
+
+#Unviseral-Example{
+    color: white;
+    background-color: brown
+}
+
+#Descendant tr td span{
+    font-size: 16px;
+    color: yellow;
+    background-color: green;
+}
+
+td > pre {
+    color: white;
+    background-color: black;
+}
+
+#Pseudo-Classes a{text-decoration: overline;}
+a:link{color: blue;}
+a:visited{color: black;}
+a:hover{color: red;background-color: #b6ff00;}
+a:active{color: green;}

@@ -14,7 +14,7 @@
     <nav>
         <ul style="list-style: disc">
             <li><a href="#color">Color Style</a><br /></li>
-            <li><a href="#Word">Word Style</a><br /></li>
+            <li><a href="#font">Word Style</a><br /></li>
             <li><a href="#Paragraph">Paragraph Style</a><br /></li>
             <li><a href="#List">List Style</a><br /></li>
         </ul>
@@ -106,9 +106,101 @@
             <a href="#top">Go to top.</a>
         </section>
         <section class="font" id="font">
-            <h2>Word style</h2>
+            <h2>Font style</h2>
             <article>
-
+                <ul style="list-sytle: disc">
+                    <li><h3>Font size.</h3></li>
+                    <p>
+                        The font size can be decided by following methods:
+                        <table border="1">
+                            <tr class="table_title">
+                                <th colspan="2">Method 1</th>
+                            </tr>
+                            <tr class="table_title">
+                                <th>Unit</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>px(pixel)</td>
+                                <td>Default value.</td>
+                            </tr>
+                            <tr>
+                                <td>pt(point)</td>
+                                <td>It's usually used on printing. 1 pt = 1/72 inch.</td>
+                            </tr>
+                            <tr>
+                                <td>pc(picas)</td>
+                                <td>It's usually used on printing. 1 pc = 12 pts.</td>
+                            </tr>
+                            <tr>
+                                <td>in(inch)</td>
+                                <td>1 in = 2.54 cm.</td>
+                            </tr>
+                            <tr>
+                                <td>cm</td>
+                                <td>centimeter.</td>
+                            </tr>
+                            <tr>
+                                <td>mm</td>
+                                <td>millimeter.</td>
+                            </tr>
+                            <tr>
+                                <td>em</td>
+                                <td>Inherit font size from upper layer.</td>
+                            </tr>
+                            <tr>
+                                <td>ex</td>
+                                <td>The reference is according to height of lowercase.</td>
+                            </tr>
+                            <tr class="table_title">
+                                <th colspan="2">Method 2</th>
+                            </tr>
+                            <tr>
+                                <th>Property</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>xx-small</td>
+                                <td>x-small is equal to 120% xx-small.</td>
+                            </tr>
+                            <tr>
+                                <td>x-small</td>
+                                <td>small is equal to 120% x-small.</td>
+                            </tr>
+                            <tr>
+                                <td>small</td>
+                                <td>medium is equal to 120% small.</td>
+                            </tr>
+                            <tr>
+                                <td>medium</td>
+                                <td>It's the basis of font size by using method 2.</td>
+                            </tr>
+                            <tr>
+                                <td>large</td>
+                                <td>large is equal to 120% medium.</td>
+                            </tr>
+                            <tr>
+                                <td>x-large</td>
+                                <td>x-large is equal to 120% large.</td>
+                            </tr>
+                            <tr>
+                                <td>xx-large</td>
+                                <td>xx-large is equal to 120% x-large.</td>
+                            </tr>
+                        </table>
+                    </p>
+                    Example:<br />
+                    <span id="font_size_ex1">font-size: 18px;<br /></span>
+                    <span id="font_size_ex2">font-size: 18pt;<br /></span>
+                    <span id="font_size_ex3">font-size: 2cm;<br /></span>
+                    <span id="font_size_ex4">font-size: 1.8em;<br /></span>
+                    <span id="font_size_ex5">font-size: medium;<br /></span>
+                    <span id="font_size_ex6">font-size: x-small;<br /></span>
+                    <span id="font_size_ex7">font-size: x-large;<br /></span>
+                    <span id="font_size_ex8">font-size: 200%;<br /></span>
+                    <span id="font_size_ex9">font-size: x-small;<br /></span>
+                    <span id="font_size_ex10">font-size: x-large;</span>
+                </ul>
             </article>
             <a href="#top">Go to top.</a>
         </section>

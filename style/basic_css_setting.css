@@ -29,3 +29,43 @@ ul > #Color_Opacity_ex3 {
 ul > #Color_Opacity_ex4 {
     opacity: 0.3;
 }
+
+#font_size_ex1 {
+    font-size: 18px;
+}
+
+#font_size_ex2 {
+    font-size: 18pt;
+}
+
+#font_size_ex3 {
+    font-size: 2cm;
+}
+
+#font_size_ex4 {
+    font-size: 1.8em;
+}
+
+#font_size_ex5 {
+    font-size: medium;
+}
+
+#font_size_ex6 {
+    font-size: x-small;
+}
+
+#font_size_ex7 {
+    font-size: x-large;
+}
+
+#font_size_ex8 {
+    font-size: 200%;
+}
+
+#font_size_ex9 {
+    font-size: x-small;
+}
+
+#font_size_ex10 {
+    font-size: x-large;
+}

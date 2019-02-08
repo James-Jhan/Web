@@ -69,3 +69,228 @@ ul > #Color_Opacity_ex4 {
 #font_size_ex10 {
     font-size: x-large;
 }
+
+#Font-Family_ex {
+    color: red;
+    font-family:sans-serif;
+}
+
+#Font-Style_ex1 {
+    font-style: italic;
+}
+
+#Font-Style_ex2 {
+    font-style: normal;
+}
+
+#Font-Style_ex3 {
+    font-style: oblique;
+}
+
+#Font-Weight_ex1 {
+    font-weight: normal;
+}
+
+#Font-Weight_ex2 {
+    font-weight: bold;
+}
+
+#Font-Weight_ex3 {
+    font-weight: 100;
+}
+
+#Font-Weight_ex4 {
+    font-weight: 600;
+}
+
+#Font-Weight_ex5 {
+    font-weight: 900;
+}
+
+#Text-Decoration_ex1 {
+    text-decoration: underline;
+}
+
+#Text-Decoration_ex2 {
+    text-decoration: overline;
+}
+
+#Text-Decoration_ex3 {
+    text-decoration: line-through;
+}
+
+#Text-Decoration_ex4 {
+    text-decoration: none;
+}
+
+#Text-Transform_ex1 {
+    text-transform: uppercase;
+}
+
+#Text-Transform_ex2 {
+    text-transform: lowercase;
+}
+
+#Text-Transform_ex3 {
+    text-transform: capitalize;
+}
+
+#Text-Transform_ex4 {
+    text-transform: none;
+}
+
+#Line-Height_ex1 {
+    line-height: 2;
+}
+
+#Line-Height_ex2 {
+    line-height: 20px;
+}
+
+#Line-Height_ex3 {
+    line-height: 250%;
+}
+
+#Text-Indent_ex1 {
+    text-indent: 1cm;
+}
+
+#Text-Indent_ex2 {
+    text-indent: 10%
+}
+
+#word-Spacing_ex1 {
+    word-spacing: 0.5cm;
+}
+
+#word-Spacing_ex2 {
+    word-spacing: 30px;
+}
+
+#Letter-Spacing_ex1 {
+    letter-spacing: normal;
+}
+
+#Letter-Spacing_ex2 {
+    letter-spacing: 4px;
+}
+
+#Text-Shadow_ex {
+    text-shadow: 15px 15px 2px silver;
+}
+
+#Text-Align_ex1 {
+    text-align: left;
+}
+
+#Text-Align_ex2 {
+    text-align: right;
+}
+
+#Text-Align_ex3 {
+    text-align: center;
+}
+
+#Text-Align_ex4 {
+    text-align: justify;
+}
+
+#Text-Align_ex5 {
+    text-align: start;
+}
+
+#Text-Align_ex6 {
+    text-align: end;
+}
+
+#Vertical-Align_ex1 {
+    font-size: 35px;
+    vertical-align: top;
+}
+
+#Vertical-Align_ex2 {
+    font-size: 35px;
+    vertical-align: text-top;
+}
+
+#Vertical-Align_ex3 {
+    font-size: 35px;
+    vertical-align: bottom;
+}
+
+#Vertical-Align_ex4 {
+    font-size: 35px;
+    vertical-align: text-bottom;
+}
+
+#Super-Sub_ex1 {
+    vertical-align: super;
+}
+
+#Super-Sub_ex2 {
+    vertical-align: sub;
+}
+
+#List-Symbol_ex1 {
+    list-style: none;
+}
+
+#List-Symbol_ex2 {
+    list-style: disc;
+}
+
+#List-Symbol_ex3 {
+    list-style: circle;
+}
+
+#List-Symbol_ex4 {
+    list-style: square;
+}
+
+#List-Symbol_ex5 {
+    list-style: decimal;
+}
+
+#List-Symbol_ex6 {
+    list-style: decimal-leading-zero;
+}
+
+#List-Symbol_ex7 {
+    list-style: lower-roman;
+}
+
+#List-Symbol_ex8 {
+    list-style: upper-roman;
+}
+
+#List-Symbol_ex9 {
+    list-style: lower-alpha;
+}
+
+#List-Symbol_ex10 {
+    list-style: upper-alpha;
+}
+
+#List-Symbol_ex11 {
+    list-style: cjk-ideographic;
+}
+
+#List-Symbol_ex12 {
+    list-style: lower-greek;
+}
+
+#List-Symbol_ex13 {
+    list-style: georgian;
+}
+
+#List-Symbol_ex14 {
+    list-style: armenian;
+}
+
+#List-Image_ex1 {
+    list-style: url(../HTML5.png) inside;
+}
+
+#List-Image_ex2 {
+    list-style: url(../HTML5.png) outside;
+}

@@ -5,21 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script type="text/javascript" src="../../scripts/jquery-3.3.1.min.js"></script>
+    <style>
+        .cont-opacity{
+            opacity: 0.5;
+        }
+    </style>
     <title>Introducing jQuery</title>
 </head>
 <body>
-    <script type="text/javascript" src="../../scripts/jQuery_html.js"></script>
     <main>
-        <p></p>
         <header>
-
+            <h1>Introducing jQuery</h1>
         </header>
         <section>
-
+            <article>
+                <h3>The selector will be introduced as below.</h3>
+                <form class="form" action="index.html" method="post">
+                    Please choose the item:
+                    <select id="jQuery_Selector" onclick="change_inf()">
+                        <option value="1" selected="selected">Tag</option>
+                        <option value="2">Class</option>
+                        <option value="3">ID</option>
+                        <option value="4">Property</option>
+                        <option value="5">Layer</option>
+                        <option value="6">Group</option>
+                    </select>
+                </form><br />
+                <table border="2">
+                    <tr>
+                        <th>Selector Name</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td id="Selector_Name" align="center">content</td>
+                        <td id="Example" align="center">content</td>
+                    </tr>
+                </table>
+            </article>
+            <br />
+            <h3>Introducing Contury</h3>
+            <article class="class_interaction">
+                <input type="button" value="Add class" id="AddClass">
+                <input type="button" value="Remove class" id="RemoveClass">
+                <input type="button" value="Toggle class" id="ToggleClass">
+                <p><input type="button" value="Next" id="Next"></p>
+                <p id="content"></p>
+            </article>
         </section>
         <footer>
             <a href="../main.html">Go Back.</a>
         </footer>
     </main>
+    <script type="text/javascript" src="../../scripts/jQuery_html.js"></script>
 </body>
 </html>

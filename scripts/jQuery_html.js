@@ -39,6 +39,14 @@ $(document).ready(function () {
     $("#SearchContury").click(function () {
         SearchContury();
     })
+
+    $("#TurnOnLight").click(function () {
+        TurnOnLight();
+    })
+
+    $("#TurnOffLight").click(function () {
+        TurnOffLight();
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -158,4 +166,20 @@ var SearchContury = function () {
     if (find) {
         $("#content").html(toHTML(index));
     }
+};
+
+var TurnOnLight = function () {
+    $(".btn").css({"boder-color":"black",
+                   "color":"black",
+                   "background-color":"white"});
+    $("body").css({"background-color":"white",
+                   "color":"black"});
+};
+
+var TurnOffLight = function () {
+    $(".btn").css({"boder-color":"white",
+                   "color":"white",
+                   "background-color":"black"});
+    $("body").css({"background-color":"black",
+                   "color":"white"});
 };

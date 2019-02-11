@@ -47,6 +47,12 @@ $(document).ready(function () {
     $("#TurnOffLight").click(function () {
         TurnOffLight();
     })
+
+    $("#TurnOnLight").hover(function () {
+        MouseEnter()
+    }, function () {
+        MouseLeave()
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -182,4 +188,14 @@ var TurnOffLight = function () {
                    "background-color":"black"});
     $("body").css({"background-color":"black",
                    "color":"white"});
+};
+
+var MouseEnter = function () {
+    $("#TurnOnLight").css({"background-color":"yellow",
+                    "color":"green"});
+};
+
+var MouseLeave = function () {
+    $("#TurnOnLight").css({"background-color":"white",
+                    "color":"black"});
 };

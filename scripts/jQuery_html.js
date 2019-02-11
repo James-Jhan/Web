@@ -2,6 +2,7 @@ var index = 0;
 
 $(document).ready(function () {
     change_inf();
+    $("#content").html(toHTML(index));
 
     $("#AddClass").click(function () {
         $("#Flag").addClass("cont-opacity");
@@ -19,11 +20,13 @@ $(document).ready(function () {
         Next();
     })
 
-    $("#ShowList").click({
-
+    $("#ShowList").click(function (){
+        ShowList();
     })
 
-    $("#content").html(toHTML(index));
+    $("#HiddenList").click(function () {
+        HiddenList();
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -83,5 +86,32 @@ var Next = function () {
         index = 0;
     }
 
+    $("#content").html(toHTML(index));
+};
+
+var ShowList = function () {
+    $("#content").empty();
+
+    for (var i = 0; i < flag.length; i++) {
+        html = "<div class='div-all'"
+                 + "<a href='#'>"
+                    + "<div class='div-img'>"
+                      + "<figure>"
+                        + "<img  src=" + "'" + flag[i] + "' width='250' style='margin:10px' id='Flag'>"
+                      + "</figure>"
+                    + "</div>"
+                    + "<div class='div-cont'>"
+                      + "<h4>" + caption[i] + "</h4>"
+                      + "<p>" + info[i] + "</p>"
+                    + "</div>"
+                 + "</a>"
+               + "</div>"
+        $("#content").append(html);
+    }
+};
+
+var HiddenList = function () {
+    $("#content").empty();
+    index = 0;
     $("#content").html(toHTML(index));
 };

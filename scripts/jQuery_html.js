@@ -94,6 +94,10 @@ $(document).ready(function () {
     $("#SlideToggle").on("click", function () {
         $("#FireFox").slideToggle("slow");
     })
+
+    $("#StartAnimate").on("click", function () {
+        StartAnimate();
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -239,4 +243,13 @@ var MouseEnter = function () {
 var MouseLeave = function () {
     $("#TurnOnLight").css({"background-color":"white",
                     "color":"black"});
+};
+
+function StartAnimate() {
+    $("#FireFox2").animate(
+        {marginLeft: '+=50px', marginTop: '+=5px'}, "slow",
+    function (){
+        $("#FireFox2").animate(
+        {marginLeft: '-=50px', marginTop: '-=5px'}, "fast");
+    });
 };

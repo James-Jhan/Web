@@ -62,6 +62,38 @@ $(document).ready(function () {
             $("#ConturyName").css("background", "pink");
         }
     })
+
+    $("#Show").on("click", function () {
+        $("#FireFox").show(500);
+    })
+
+    $("#Hide").on("click", function () {
+        $("#FireFox").hide("slow");
+    })
+
+    $("#FadeIn").on("click", function () {
+        $("#FireFox").fadeIn("fast");
+    })
+
+    $("#FadeOut").on("click", function () {
+        $("#FireFox").fadeOut("normal");
+    })
+
+    $("#FadeToggle").on("click", function () {
+        $("#FireFox").fadeToggle("slow");
+    })
+
+    $("#SlideDown").on("click", function () {
+        $("#FireFox").slideDown();
+    })
+
+    $("#SlideUp").on("click", function () {
+        $("#FireFox").slideUp("fast");
+    })
+
+    $("#SlideToggle").on("click", function () {
+        $("#FireFox").slideToggle("slow");
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");

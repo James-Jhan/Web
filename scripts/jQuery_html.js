@@ -27,6 +27,14 @@ $(document).ready(function () {
     $("#HiddenList").click(function () {
         HiddenList();
     })
+
+    $("#EnableBorder").click(function () {
+        EnableBorder();
+    })
+
+    $("#DisableBorder").click(function () {
+        DisableBorder();
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -115,3 +123,12 @@ var HiddenList = function () {
     index = 0;
     $("#content").html(toHTML(index));
 };
+
+var EnableBorder = function () {
+    $("#Flag").attr({"style":"opacity:0.5", "border":"5"});
+};
+
+var DisableBorder = function () {
+    $("#Flag").removeAttr("style");
+    $("#Flag").removeAttr("border");
+}

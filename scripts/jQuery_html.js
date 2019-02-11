@@ -16,13 +16,11 @@ $(document).ready(function () {
     })
 
     $("#Next").click(function () {
-        index++;
+        Next();
+    })
 
-        if (index >= flag.length) {
-            index = 0;
-        }
+    $("#ShowList").click({
 
-        $("#content").html(toHTML(index));
     })
 
     $("#content").html(toHTML(index));
@@ -76,4 +74,14 @@ var toHTML = function () {
     var hm = "<p>" + info[index] + "</p>";
     var content = fig + hm;
     return content;
+};
+
+var Next = function () {
+    index++;
+
+    if (index >= flag.length) {
+        index = 0;
+    }
+
+    $("#content").html(toHTML(index));
 };

@@ -53,6 +53,15 @@ $(document).ready(function () {
     }, function () {
         MouseLeave()
     })
+
+    $("#ConturyName").on({
+        "blur":function () {
+            $("#ConturyName").css("background", "white");
+        },
+        "focus":function () {
+            $("#ConturyName").css("background", "pink");
+        }
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");

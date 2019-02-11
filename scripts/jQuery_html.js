@@ -35,6 +35,10 @@ $(document).ready(function () {
     $("#DisableBorder").click(function () {
         DisableBorder();
     })
+
+    $("#SearchContury").click(function () {
+        SearchContury();
+    })
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -132,3 +136,26 @@ var DisableBorder = function () {
     $("#Flag").removeAttr("style");
     $("#Flag").removeAttr("border");
 }
+
+var SearchContury = function () {
+    var target = $("#ConturyName").val();
+    var find = true;
+
+    if ("America" === target) {
+        index = 0;
+    }
+    else if ("England" === target) {
+        index = 1;
+    }
+    else if ("Japan" === target) {
+        index = 2;
+    }
+    else {
+        alert("No Data");
+        find = false;
+    }
+
+    if (find) {
+        $("#content").html(toHTML(index));
+    }
+};

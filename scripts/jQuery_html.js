@@ -1,4 +1,6 @@
 var index = 0;
+var select = 0;
+var sel_val = 0;
 
 $(document).ready(function () {
     change_inf();
@@ -98,6 +100,11 @@ $(document).ready(function () {
     $("#StartAnimate").on("click", function () {
         StartAnimate();
     })
+
+    $("#sel").on({
+        "mouseenter": fnToggleClass,
+        "mouseleave": fnToggleClass
+    });
 });
 
 var flag = new Array("../../images/America.png", "../../images/England.png", "../../images/Japan.png");
@@ -252,4 +259,8 @@ function StartAnimate() {
         $("#FireFox2").animate(
         {marginLeft: '-=50px', marginTop: '-=5px'}, "fast");
     });
+};
+
+function fnToggleClass() {
+    $("#about").toggleClass("active");
 };

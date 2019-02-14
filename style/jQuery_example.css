@@ -1,0 +1,64 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#div-show {
+    width: 100%;
+    height: 70%;
+    background-color: black;
+    text-align: center;
+}
+
+#div-show img {
+    height: 100%;
+}
+
+#div-cont {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+}
+
+#btnPrev {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/btn/btnPrev.png");
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    left: 5px;
+}
+
+#btnNext {
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/btn/btnNext.png");
+    background-size: cover;
+    position: absolute;
+    top: 40%;
+    right: 5px;
+}
+
+#div-select {
+    height: 100%;
+    width: 1000%;
+    position: absolute;
+    background-color: black;
+    left: 0%;
+    transition: 1.5s;
+}
+
+#div-select div {
+    height: 85%;
+    width: 240px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 10px;
+}
+
+#div-select img {
+    width: 100%;
+    height: 100%;
+}
